@@ -61,21 +61,9 @@ final class HomeNewsCoordinator: Coordinator {
 
         navigationController.pushViewController(homeNews, animated: false)
     }
-
-//    func startHome() {
-//        let homeViewController = viewControllerFactory.makeHomeViewController(coordinator: self)
-//        navigationController.pushViewController(homeViewController, animated: false)
-//    }
     
     func navigateDetailsNews(news: Articles) {
-        //let favoriteMovieRepository = FavoriteMovieRepositoryImpl(coreDataManager: CoreDataManager.shared)
-        //let detailViewModel = DetailMovieViewModel(movie: movie, favoriteMovieRepository: favoriteMovieRepository)
         let detailViewController = viewControllerFactory.makeDetailNewsViewController(news: news)
         navigationController.pushViewController(detailViewController, animated: true)
     }
-    
-//    func navigateDetailsNews() {
-//         let detailNews = viewControllerFactory.makeWatchlistViewController()
-//         navigationController.pushViewController(watchlistViewController, animated: true)
-//     }
 }

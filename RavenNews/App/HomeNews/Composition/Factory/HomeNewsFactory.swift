@@ -19,10 +19,7 @@ final class HomeViewFactoryImp: HomeNewsFactory {
     }
     
     func makeDetailNewsViewController(news: Articles) -> DetailNewsView {
-        print(navigationController)
-//        let coreData = CoreDataManager.saveContext(self)
-//        let favoriteMovieRepository = FavoriteMovieRepositoryImpl(coreDataManager: coreDataManager)
-//        
+        print(navigationController)   
         let viewModel = DetailNewsViewModel(news: news)
         return DetailNewsView(viewModel: viewModel)
     }

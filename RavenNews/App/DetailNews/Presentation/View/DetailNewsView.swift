@@ -51,7 +51,6 @@ final class DetailNewsView: UIViewController {
         view.addSubview(titleLabel)
         view.addSubview(descriptionLabel)
         
-        // Configurar las constraints
         imageView.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
